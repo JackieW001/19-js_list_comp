@@ -3,16 +3,17 @@ var neutralPop = data.map(function(a) {
     return a.total;
 });
 
-neutralPop;
+console.log("Population per age group");
+console.log(neutralPop);
 
 // Total population
 
 var totalPops = neutralPop.reduce(function(x, y){return x + y})
 
-totalPops;
+console.log("Total population: " + totalPops);
 
 // Average population across all ages
 
 var average = totalPops / neutralPop.length;
 
-average;
+console.log("Average population per age group: " + average);
